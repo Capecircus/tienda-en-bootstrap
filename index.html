@@ -13,46 +13,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
-
     <header>
-        <nav class="navbar navbar-expand-lg  navbar-dark bg-success">
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-success w-100">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#!"><img src="assets/imgs/logo-white.png" alt="..."></a>
+                <a class="navbar-brand" href="#!"><img src="assets/imgs/logo-white.png" alt="..." class="w-25"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation"><span
                         class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 d-flex justify-content-end">
                         <li class="nav-item"><a class="nav-link active text-white" aria-current="page"
                                 href="#!">Home</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="#!">Features</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="#!">Pricing</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="#!">Disabled</a></li>
-                        <li class="nav-item dropdown text-white">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">Todos los productos</a></li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                </li>
-                                <li><a class="dropdown-item" href="#!">Artículos populares</a></li>
-                                <li><a class="dropdown-item" href="#!">Recién llegados</a></li>
-                            </ul>
-                        </li>
                     </ul>
-                    <form class="d-flex">
-                        <button class="btn btn-outline-dark" type="submit">
-                            <i class="bi-cart-fill me-1"></i>
-                            Mi carrito
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                        </button>
-                    </form>
                 </div>
             </div>
         </nav>
@@ -61,182 +40,12 @@
     <main class="py-1">
         <div class="container px-4 px-lg-5 mt-5">
             <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
-                <!--                 <div class="col mb-5">
-                    <div class="card h-100">
-
-                        <img class="card-img-top" src="/assets/imgs/psycho-cat.gif" alt="..." />
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <h5 class="fw-bolder">Fancy Product</h5>
-                                $40.00 - $80.00
-                            </div>
-                        </div>
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
--->
-                <div class='col mb-5'>
-                    <article class="card">
-                        <!-- Product image-->
-                        <img class="card-img-top" src="assets\imgs\psycho-cat.gif" alt="...">
-                        <div class="card-body">
-                            <div class="text-left">
-                                <h5 class="fw-normal" style="font-size: 20px;">Plumón Coral Fleece estampado en modelo y
-                                    tamaño a elección</h5>
-                                <medium class="text-muted">Plumones Manolino</medium>
-                            </div>
-                            <div class="text-left">
-                                <small class="text-muted" style="font-size: 13px;"><i class="fas fa-map-marker-alt"
-                                        aria-hidden="true"></i>
-                                    <small class="text-muted" style="font-size: ;">9191 Avenida Vitacura, Chile</small>
-                                </small>
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-2 pt-3 bg-transparent">
-                            <div class="text-center"><small class="text-center">precio en el centro</small></div>
-
-                        </div>
-                </div>
-                <div class='col mb-5'>
-                    <article class="card">
-                        <!-- Product image-->
-                        <img class="card-img-top" src="assets\imgs\psycho-cat.gif" alt="...">
-                        <!-- Product details-->
-                        <div class="card-body" style="font-size: 20px;">
-                            <div class="text-left">
-                                <!-- Product name-->
-                                <h5 class="fw-normal" style="font-size: 20px;">Plumón Coral Fleece estampado en modelo y
-                                    tamaño a elección</h5>
-                                <!-- Product price-->
-                                <medium class="text-muted">Plumones Manolino</medium>
-                            </div>
-                            <div class="text-left">
-                                <small class="text-muted" style="font-size: 13px;"><i class="fas fa-map-marker-alt"
-                                        aria-hidden="true"></i>
-                                    <small class="text-muted" style="font-size: ;">9191 Avenida Vitacura, Chile</small>
-                                </small>
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-2 pt-3 bg-transparent">
-                            <div class="text-center"><small class="text-center">precio en el centro</small></div>
-
-                        </div>
-                </div>
-                <div class='col mb-5'>
-                    <article class="card">
-                        <!-- Product image-->
-                        <img class="card-img-top" src="assets\imgs\psycho-cat.gif" alt="...">
-                        <!-- Product details-->
-                        <div class="card-body" style="font-size: 20px;">
-                            <div class="text-left">
-                                <!-- Product name-->
-                                <h5 class="fw-normal" style="font-size: 20px;">Plumón Coral Fleece estampado en modelo y
-                                    tamaño a elección</h5>
-                                <!-- Product price-->
-                                <medium class="text-muted">Plumones Manolino</medium>
-                            </div>
-                            <div class="text-left">
-                                <small class="text-muted" style="font-size: 13px;"><i class="fas fa-map-marker-alt"
-                                        aria-hidden="true"></i>
-                                    <small class="text-muted" style="font-size: ;">9191 Avenida Vitacura, Chile</small>
-                                </small>
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-2 pt-3 bg-transparent">
-                            <div class="text-center"><small class="text-center">precio en el centro</small></div>
-
-                        </div>
-                </div>
-                <div class='col mb-5'>
-                    <article class="card">
-                        <!-- Product image-->
-                        <img class="card-img-top" src="assets\imgs\psycho-cat.gif" alt="...">
-                        <!-- Product details-->
-                        <div class="card-body" style="font-size: 20px;">
-                            <div class="text-left">
-                                <!-- Product name-->
-                                <h5 class="fw-normal" style="font-size: 20px;">Plumón Coral Fleece estampado en modelo y
-                                    tamaño a elección</h5>
-                                <!-- Product price-->
-                                <medium class="text-muted">Plumones Manolino</medium>
-                            </div>
-                            <div class="text-left">
-                                <small class="text-muted" style="font-size: 13px;"><i class="fas fa-map-marker-alt"
-                                        aria-hidden="true"></i>
-                                    <small class="text-muted" style="font-size: ;">9191 Avenida Vitacura, Chile</small>
-                                </small>
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-2 pt-3 bg-transparent">
-                            <div class="text-center"><small class="text-center">precio en el centro</small></div>
-
-                        </div>
-                </div>
-                <div class='col mb-5'>
-                    <article class="card">
-                        <!-- Product image-->
-                        <img class="card-img-top" src="assets\imgs\psycho-cat.gif" alt="...">
-                        <!-- Product details-->
-                        <div class="card-body" style="font-size: 20px;">
-                            <div class="text-left">
-                                <!-- Product name-->
-                                <h5 class="fw-normal" style="font-size: 20px;">Plumón Coral Fleece estampado en modelo y
-                                    tamaño a elección</h5>
-                                <!-- Product price-->
-                                <medium class="text-muted">Plumones Manolino</medium>
-                            </div>
-                            <div class="text-left">
-                                <small class="text-muted" style="font-size: 13px;"><i class="fas fa-map-marker-alt"
-                                        aria-hidden="true"></i>
-                                    <small class="text-muted" style="font-size: ;">9191 Avenida Vitacura, Chile</small>
-                                </small>
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-2 pt-3 bg-transparent">
-                            <div class="text-center"><small class="text-center">precio en el centro</small></div>
-
-                        </div>
-                </div>
-                <div class='col mb-5'>
-                    <article class="card">
-                        <!-- Product image-->
-                        <img class="card-img-top" src="assets\imgs\psycho-cat.gif" alt="...">
-                        <!-- Product details-->
-                        <div class="card-body" style="font-size: 20px;">
-                            <div class="text-left">
-                                <!-- Product name-->
-                                <h5 class="fw-normal" style="font-size: 20px;">Plumón Coral Fleece estampado en modelo y
-                                    tamaño a elección</h5>
-                                <!-- Product price-->
-                                <medium class="text-muted">Plumones Manolino</medium>
-                            </div>
-                            <div class="text-left">
-                                <small class="text-muted" style="font-size: 13px;"><i class="fas fa-map-marker-alt"
-                                        aria-hidden="true"></i>
-                                    <small class="text-muted" style="font-size: ;">9191 Avenida Vitacura, Chile</small>
-                                </small>
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-2 pt-3 bg-transparent">
-                            <div class="text-center"><small class="text-center">precio en el centro</small></div>
-
-                        </div>
-                </div>
                 <div class="col mb-5">
-                    <div class="card">
+                    <div class="card h-100">
                         <img class="card-img-top" src="assets\imgs\psycho-cat.gif" alt="...">
                         <div class="card-body">
                             <div class="text-left">
-                                <h5 class="fw-normal" style="font-size: 20px;">Plumón Coral Fleece estampado en modelo y
+                                <h5 class="fw-normal">Plumón Coral Fleece estampado en modelo y
                                     tamaño a elección</h5>
                             </div>
                             <medium class="text-muted">Plumones Manolino</medium>
@@ -244,23 +53,44 @@
                                 <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                                 <small class="text-muted">9191 Avenida Vitacura, Chile</small>
                             </div>
-
                         </div>
-                        <div class="card-footer">final</div>
+                        <div class="card-footer d-flex inline justify-content-between">
+
+                            <div class=' mx-auto d-flex  align-items-end fs-4'>
+                                $45.990
+                            </div>
+                            <div class="d-flex align-items-baseline text-success  text-end fs-2">
+                                <strong>$22.990</strong>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-            </section>
 
-            </article>
-            </article>
+            </div>
         </div>
     </main>
 
     <section>
+        <form class="cuponera pt-10 bg-success">
+            <legend class="text-center text-white">Recibe cupones en tu correo</legend>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Correo Electronico">
+            </div>
+            <button type="Enviar" class="btn btn-light">Enviar</button>
+        </form>
     </section>
-    <footer>
+    <footer class="footer align-items-center py-3">
+        <div class="container text-center">
+            <img src="/assets/imgs/logo-black.png" alt="..." class="h-10">
+            <p>2018 Cuppon Latam . Todos los derechos reservados.</p>
+        </div>
     </footer>
+
+
 
 
 
